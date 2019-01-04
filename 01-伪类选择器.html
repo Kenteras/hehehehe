@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	/* 
+	
+	伪类选择的是当前标签的一个状态
+
+	伪类的语法格式：选择器:伪类状态 {} 
+		
+	a标签的伪类有四种 并且书写顺序不能乱	
+
+	*/
+	/* 链接没有被点击时候的一个状态 */
+	.box:link {
+		color: red;
+	}
+	
+	/* 链接访问过后的状态 */
+	.box:visited {
+		color: pink;
+	}
+		
+	/* 鼠标悬停之后的状态 */
+	.box:hover {
+		color: orange;
+	}
+	/* 鼠标按下不放时候的状态 */
+	.box:active {
+		color: lime;
+	}
+
+	</style>
+</head>
+<body>
+	<!-- 伪类选择器选择的是当前标签的一种状态 -->
+	
+	<a class="box" href="#">我是一个链接</a>
+
+</body>
+</html>
